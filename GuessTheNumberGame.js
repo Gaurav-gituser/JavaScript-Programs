@@ -1,30 +1,22 @@
+// Only works in the browser
 
-//only works in browser
-
-let max = prompt("Enter The Maximun Number");
-
+let max = prompt("Enter the maximum number:");
 let random = Math.floor(Math.random() * max) + 1;
 
-let guess = prompt("Enter The Guees Number ");
+let guess = prompt("Enter your guess:");
 
 while (true) {
-
-    if (guess == "quit") {
-        console.log("You Quit The Game");
+    if (guess === "quit") {
+        console.log("You quit the game.");
         break;
     }
-    if (guess == random) {
-        console.log("Congrats! You Guess Right Number", random);
+
+    if (parseInt(guess) === random) {
+        console.log("Congrats! You guessed the correct number:", random);
         break;
+    } else if (parseInt(guess) < random) {
+        guess = prompt("Hint: Your number is too low. Try again!");
+    } else {
+        guess = prompt("Hint: Your number is too high. Try again!");
     }
-    else if (guess < random) {
-
-        guess = prompt("Hint : Entered  Number is Small. Try Agin!");
-    }
-    else {
-
-        guess = prompt("Hint : Entered  Number is Big. Try Agin!");
-    }
-
-
 }
