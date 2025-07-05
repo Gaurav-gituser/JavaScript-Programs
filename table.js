@@ -5,7 +5,7 @@ for (i = n; i <= n * 10; i = i + n) {
 }
 
 
-// *for browser to get input from user*
+// This code is for browser because it uses prompt() for user input and console.log() for output
 
 // let n = prompt("Enter The Number of Table :- ");
 

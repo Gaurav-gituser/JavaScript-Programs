@@ -1,4 +1,4 @@
-// Only works in the browser
+// This code runs only in the browser because it uses prompt() for user input and console.log() for output
 
 let max = prompt("Enter the maximum number:");
 let random = Math.floor(Math.random() * max) + 1;
