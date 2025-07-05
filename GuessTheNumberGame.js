@@ -11,10 +11,10 @@ while (true) {
         break;
     }
 
-    if (parseInt(guess) === random) {
+    if (guess === random) {
         console.log("Congrats! You guessed the correct number:", random);
         break;
-    } else if (parseInt(guess) < random) {
+    } else if (guess < random) {
         guess = prompt("Hint: Your number is too low. Try again!");
     } else {
         guess = prompt("Hint: Your number is too high. Try again!");
